@@ -54,3 +54,26 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.parallax {
+  /* The image used */
+  background-image: url("medoingmestuff.gif");
+
+  /* Set a specific height */
+  min-height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
