@@ -21,8 +21,18 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
 
 <div class="parallax"></div>
 <!--Credits to: https://metinseven.nl/ & https://giphy.com/gifs/night-programming-programmer-xUA7bdpLxQhsSQdyog-->
+<div id="Home"></div>  
+    <nav id="navbar"style="font-family: 'Black Han Sans';">
+        <ul>
+            <li class="item"><a href="#Home">Home</a></li>
+            <li class="item"><a href="#Skills">Skills</a></li>
+            <li class="item"><a href="#WhatILoveToDo">What I love to do</a></li>
+            <li class="item"><a href="#Achievements">Achievements</a></li>
+            <li class="item"><a href="#MyProjects">My Projects</a></li>
+        </ul>
+    </nav>
 
-<div style="background-color:#83ffbe;" style="width: 100%"><br>
+<div style="background-color:#83ffbe;" style="width: 100%" id="Skills"><br>
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
       Hey you're here finally!<br>
       <span style="font-family: 'Do Hyeon';font-size: 40px; color: #484848">Well then let me tell you a bit about me</span>
@@ -36,7 +46,7 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
     </div>
 </div>
 
-<div data-aos="fade-up" style="background-color:#d562ff"><br>
+<div data-aos="fade-up" style="background-color:#d562ff" id="WhatILoveToDo"><br>
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
         Skills
     </div>
@@ -67,7 +77,7 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
 </div>
 </div>
 
-<div data-aos="fade-up" style="background-color:#ffd23c"><br>
+<div data-aos="fade-up" style="background-color:#ffd23c" id="Achievements"><br>
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
         What I love to do
         <div style="font-family: 'Do Hyeon'; font-size: 20px; color: #585858">
@@ -88,15 +98,57 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
         </div>
     </div>
 </div>
-<div data-aos="fade-up" style="background-color:#ff0751"><br>
+<div data-aos="fade-up" style="background-color:#ff0751" id="MyProjects"><br>
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
         Achievements
-    </div>
+        <div class="row" style="font-family: 'Do Hyeon'; font-size: 25px; color: #484848">
+
+          <div class="container">
+            <div class="column">
+              <img class="certbor" src="DIS.jpeg" style="width: 50%">
+              <div class="overlay">
+                <div class="text">Delhi International School-Theatre-Second Position</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="column">
+              <img class="certbor" src="SRGS.jpeg" style="width: 50%">
+              <div class="overlay">
+                <div class="text">Shri Ram Global School-PPT Design-Third Position</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row" style="font-family: 'Do Hyeon'; font-size: 25px; color: #484848">
+
+          <div class="container">
+            <div class="column">
+              <img class="certbor" src="LANCOV.jpeg" style="width: 50%">
+              <div class="overlay">
+                <div class="text">Lancers Convent-Scratch Game Design-Second Position</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="column">
+              <img class="certbor" src="MAPS.jpeg" style="width: 25%">
+              <div class="overlay">
+                <div class="text">Maharaja Agarsain Public School-App Development-Third Position</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div><br>
 </div>
-<div data-aos="fade-up" style="background-color:#bbf849"><br>
+<div data-aos="fade-up" style="background-color:#bbf849" id=""><br>
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
         My Projects
-        <div>
+        <div style="font-family: 'Do Hyeon'; font-size: 25px; color: #484848">
           <div class="row">
             <div class="container">
               <div class="column">
@@ -124,7 +176,7 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
                 </div>
               </div>
             </div>
-        </div>
+        </div><br>
     </div>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="aos.js"></script>
@@ -132,6 +184,20 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
   AOS.init({
     duration: 2000,
   });
+</script>
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
 </script>
 </body>
 </html>
