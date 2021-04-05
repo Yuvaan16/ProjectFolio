@@ -112,6 +112,7 @@ body::-webkit-scrollbar-thumb {
 
 /*Navbar*/
 #navbar{
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,7 +134,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #navbar ul{
-    display: flex;
+    display:contents ;
 }
 #navbar ul li{
     list-style: none;
@@ -151,5 +152,5 @@ body::-webkit-scrollbar-thumb {
 }
 #navbar ul li a:hover{
     color: white;
-    background-color: #ee55b4;
+    background-color: #8a8a8a;
 }
